@@ -1,0 +1,12 @@
+[Unit]
+Description=Turnwheel Driver
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/turnwheel
+Restart=on-failure
+User=sparky
+
+[Install]
+WantedBy=multi-user.target
